@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en" data-theme="dark" data-accent="red">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Saran K. — Creative Director</title>
+  <meta name="description" content="Saran K. creative director portfolio — selected work, music identity, branding and concepts.">
+  <meta name="theme-color" content="#050505">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="boot" aria-hidden="true">
+    <div class="matrix">
+      <span style="--i:1">010110101001101</span><span style="--i:2">010110101001101</span><span style="--i:3">010110101001101</span><span style="--i:4">010110101001101</span><span style="--i:5">010110101001101</span><span style="--i:6">010110101001101</span><span style="--i:7">010110101001101</span><span style="--i:8">010110101001101</span><span style="--i:9">010110101001101</span><span style="--i:10">010110101001101</span><span style="--i:11">010110101001101</span><span style="--i:12">010110101001101</span><span style="--i:13">010110101001101</span><span style="--i:14">010110101001101</span><span style="--i:15">010110101001101</span><span style="--i:16">010110101001101</span><span style="--i:17">010110101001101</span>
+    </div>
+    <div class="boot-core"><i></i></div>
+  </div>
+
+  <canvas id="scene" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="grid-bg" aria-hidden="true"></div>
+
+  <aside class="sidebar">
+    <a class="brand" href="#home">
+      <strong>Saran K.</strong>
+      <span>Creative Director</span>
+    </a>
+
+    <nav class="desktop-nav">
+      <a href="#home" class="active">Home</a>
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#music">Music</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="side-card">
+      <span>Status</span>
+      <p>Available for creative direction, brand identity, music visuals and digital campaigns.</p>
+    </div>
+
+    <div class="controls">
+      <label class="switch-line">
+        <span>Light</span>
+        <input id="themeToggle" type="checkbox">
+        <b></b>
+      </label>
+
+      <div class="accent-picker" aria-label="Accent color">
+        <button data-accent="red" class="active" aria-label="Red accent"></button>
+        <button data-accent="violet" aria-label="Violet accent"></button>
+        <button data-accent="cyan" aria-label="Cyan accent"></button>
+        <button data-accent="lime" aria-label="Lime accent"></button>
+        <button data-accent="amber" aria-label="Amber accent"></button>
+        <button data-accent="white" aria-label="White accent"></button>
+      </div>
+    </div>
+
+    <footer>© 2026 Saran Kanapathy</footer>
+  </aside>
+
+  <header class="mobile-top">
+    <a href="#home">Saran K.<i></i></a>
+    <button id="mobileTheme" type="button">Light</button>
+  </header>
+
+  <main class="page">
+    <section class="landing" id="home">
+      <p class="kicker reveal"><span></span> Creative Director / Artist / Brand Strategist</p>
+      <h1 class="landing-title">
+        <span>Saran K.</span>
+      </h1>
+      <p class="landing-copy reveal">
+        I build visual systems for music, culture, product concepts and modern brands — blending creative direction, digital marketing and identity design.
+      </p>
+      <div class="landing-actions reveal">
+        <a href="#work" class="primary-btn">View Work</a>
+        <a href="assets/saran-kanapathy.vcf" download class="ghost-btn">Save Contact</a>
+      </div>
+    </section>
+
+    <section class="work-section" id="work">
+      <div class="section-head reveal">
+        <span>// Selected Projects</span>
+        <h2>Work archive</h2>
+        <p>Search, filter and open projects to view details and software used.</p>
+      </div>
+
+      <div class="toolbar reveal">
+        <input id="projectSearch" type="search" placeholder="Search projects, tools, categories..." aria-label="Search projects">
+        <div class="filters">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="branding">Branding</button>
+          <button class="filter" data-filter="identity">Identity</button>
+          <button class="filter" data-filter="editorial">Editorial</button>
+          <button class="filter" data-filter="concept">Concept</button>
+          <button class="filter" data-filter="uiux">UI/UX</button>
+        </div>
+      </div>
+
+      <div class="project-grid">
+
+          <article class="project-card reveal" 
+            data-title="Project Seraph-9" 
+            data-category="editorial" 
+            data-meta="Editorial" 
+            data-tools="InDesign • Photoshop • Illustrator" 
+            data-desc="Classified sci-fi report and containment layout.">
+            <button class="project-open" type="button">
+              <img src="assets/work/seraph-9.jpeg" alt="Project Seraph-9" loading="lazy">
+              <div class="project-overlay">
+                <span>Editorial</span>
+                <h3>Project Seraph-9</h3>
+                <p>Classified sci-fi report and containment layout.</p>
+                <div class="tool-mini"><small>InDesign</small><small>Photoshop</small><small>Illustrator</small></div>
+              </div>
+            </button>
+          </article>
+
+          <article class="project-card reveal" 
+            data-title="Nike Float Concept" 
+            data-category="concept" 
+            data-meta="Concept" 
+            data-tools="Blender • Photoshop • Illustrator" 
+            data-desc="Zero-gravity footwear product visualization.">
+            <button class="project-open" type="button">
+              <img src="assets/work/nike-float.jpeg" alt="Nike Float Concept" loading="lazy">
+              <div class="project-overlay">
+                <span>Concept</span>
+                <h3>Nike Float Concept</h3>
+                <p>Zero-gravity footwear product visualization.</p>
+                <div class="tool-mini"><small>Blender</small><small>Photoshop</small><small>Illustrator</small></div>
+              </div>
+            </button>
+          </article>
+
+          <article class="project-card reveal" 
+            data-title="Glass Identity Card" 
+            data-category="identity" 
+            data-meta="Identity" 
+            data-tools="Illustrator • Photoshop • Figma" 
+            data-desc="Premium glassmorphism personal identity card.">
+            <button class="project-open" type="button">
+              <img src="assets/work/glass-card.jpeg" alt="Glass Identity Card" loading="lazy">
+              <div class="project-overlay">
+                <span>Identity</span>
+                <h3>Glass Identity Card</h3>
+                <p>Premium glassmorphism personal identity card.</p>
+                <div class="tool-mini"><small>Illustrator</small><small>Photoshop</small><small>Figma</small></div>
+              </div>
+            </button>
+          </article>
+
+          <article class="project-card reveal" 
+            data-title="Chronos//2026 Calendar" 
+            data-category="editorial" 
+            data-meta="Editorial" 
+            data-tools="InDesign • Photoshop • Illustrator" 
+            data-desc="Futuristic calendar product concept.">
+            <button class="project-open" type="button">
+              <img src="assets/work/chronos-calendar.jpeg" alt="Chronos//2026 Calendar" loading="lazy">
+              <div class="project-overlay">
+                <span>Editorial</span>
+                <h3>Chronos//2026 Calendar</h3>
+                <p>Futuristic calendar product concept.</p>
+                <div class="tool-mini"><small>InDesign</small><small>Photoshop</small><small>Illustrator</small></div>
+              </div>
+            </button>
+          </article>
+
+          <article class="project-card reveal" 
+            data-title="Sadew Gems Identity" 
+            data-category="branding" 
+            data-meta="Branding" 
+            data-tools="Illustrator • Photoshop • Procreate" 
+            data-desc="Luxury gem brand identity and stationery concept.">
+            <button class="project-open" type="button">
+              <img src="assets/work/sadew-gems.jpeg" alt="Sadew Gems Identity" loading="lazy">
+              <div class="project-overlay">
+                <span>Branding</span>
+                <h3>Sadew Gems Identity</h3>
+                <p>Luxury gem brand identity and stationery concept.</p>
+                <div class="tool-mini"><small>Illustrator</small><small>Photoshop</small><small>Procreate</small></div>
+              </div>
+            </button>
+          </article>
+
+          <article class="project-card reveal" 
+            data-title="Aestra Book Design" 
+            data-category="editorial" 
+            data-meta="Editorial" 
+            data-tools="InDesign • Photoshop • Illustrator" 
+            data-desc="Editorial book cover and publication concept.">
+            <button class="project-open" type="button">
+              <img src="assets/work/aestra-book.jpeg" alt="Aestra Book Design" loading="lazy">
+              <div class="project-overlay">
+                <span>Editorial</span>
+                <h3>Aestra Book Design</h3>
+                <p>Editorial book cover and publication concept.</p>
+                <div class="tool-mini"><small>InDesign</small><small>Photoshop</small><small>Illustrator</small></div>
+              </div>
+            </button>
+          </article>
+
+          <article class="project-card reveal" 
+            data-title="Smart Home Dashboard" 
+            data-category="uiux" 
+            data-meta="UI/UX" 
+            data-tools="Figma • After Effects • Photoshop" 
+            data-desc="Soft futuristic smart-home interface concept.">
+            <button class="project-open" type="button">
+              <img src="assets/work/smart-ui.jpeg" alt="Smart Home Dashboard" loading="lazy">
+              <div class="project-overlay">
+                <span>UI/UX</span>
+                <h3>Smart Home Dashboard</h3>
+                <p>Soft futuristic smart-home interface concept.</p>
+                <div class="tool-mini"><small>Figma</small><small>After Effects</small><small>Photoshop</small></div>
+              </div>
+            </button>
+          </article>
+
+          <article class="project-card reveal" 
+            data-title="Higanbana Editorial" 
+            data-category="editorial" 
+            data-meta="Editorial" 
+            data-tools="Photoshop • Illustrator • Lightroom" 
+            data-desc="Dark botanical editorial poster system.">
+            <button class="project-open" type="button">
+              <img src="assets/work/higanbana.jpeg" alt="Higanbana Editorial" loading="lazy">
+              <div class="project-overlay">
+                <span>Editorial</span>
+                <h3>Higanbana Editorial</h3>
+                <p>Dark botanical editorial poster system.</p>
+                <div class="tool-mini"><small>Photoshop</small><small>Illustrator</small><small>Lightroom</small></div>
+              </div>
+            </button>
+          </article>
+
+          <article class="project-card reveal" 
+            data-title="Wraith Swarm" 
+            data-category="concept" 
+            data-meta="Concept" 
+            data-tools="Blender • Photoshop • Illustrator" 
+            data-desc="Thought-responsive nanobot concept system.">
+            <button class="project-open" type="button">
+              <img src="assets/work/wraith-swarm.jpeg" alt="Wraith Swarm" loading="lazy">
+              <div class="project-overlay">
+                <span>Concept</span>
+                <h3>Wraith Swarm</h3>
+                <p>Thought-responsive nanobot concept system.</p>
+                <div class="tool-mini"><small>Blender</small><small>Photoshop</small><small>Illustrator</small></div>
+              </div>
+            </button>
+          </article>
+
+          <article class="project-card reveal" 
+            data-title="Adidas Shockwave" 
+            data-category="concept" 
+            data-meta="Concept" 
+            data-tools="Blender • Photoshop • Illustrator" 
+            data-desc="Futuristic sneaker propulsion concept.">
+            <button class="project-open" type="button">
+              <img src="assets/work/adidas-shockwave.jpeg" alt="Adidas Shockwave" loading="lazy">
+              <div class="project-overlay">
+                <span>Concept</span>
+                <h3>Adidas Shockwave</h3>
+                <p>Futuristic sneaker propulsion concept.</p>
+                <div class="tool-mini"><small>Blender</small><small>Photoshop</small><small>Illustrator</small></div>
+              </div>
+            </button>
+          </article>
+
+          <article class="project-card reveal" 
+            data-title="Lime Identity Card" 
+            data-category="identity" 
+            data-meta="Identity" 
+            data-tools="Illustrator • Photoshop • Figma" 
+            data-desc="Bold lime and black business identity system.">
+            <button class="project-open" type="button">
+              <img src="assets/work/lime-card.jpeg" alt="Lime Identity Card" loading="lazy">
+              <div class="project-overlay">
+                <span>Identity</span>
+                <h3>Lime Identity Card</h3>
+                <p>Bold lime and black business identity system.</p>
+                <div class="tool-mini"><small>Illustrator</small><small>Photoshop</small><small>Figma</small></div>
+              </div>
+            </button>
+          </article>
+
+          <article class="project-card reveal" 
+            data-title="Ink Brush Card" 
+            data-category="identity" 
+            data-meta="Identity" 
+            data-tools="Illustrator • Photoshop • Procreate" 
+            data-desc="Expressive brush-stroke identity card.">
+            <button class="project-open" type="button">
+              <img src="assets/work/ink-card.jpeg" alt="Ink Brush Card" loading="lazy">
+              <div class="project-overlay">
+                <span>Identity</span>
+                <h3>Ink Brush Card</h3>
+                <p>Expressive brush-stroke identity card.</p>
+                <div class="tool-mini"><small>Illustrator</small><small>Photoshop</small><small>Procreate</small></div>
+              </div>
+            </button>
+          </article>
+
+          <article class="project-card reveal" 
+            data-title="Red Industrial Card" 
+            data-category="identity" 
+            data-meta="Identity" 
+            data-tools="Illustrator • Photoshop • Figma" 
+            data-desc="Industrial red/black personal identity concept.">
+            <button class="project-open" type="button">
+              <img src="assets/work/red-card.jpeg" alt="Red Industrial Card" loading="lazy">
+              <div class="project-overlay">
+                <span>Identity</span>
+                <h3>Red Industrial Card</h3>
+                <p>Industrial red/black personal identity concept.</p>
+                <div class="tool-mini"><small>Illustrator</small><small>Photoshop</small><small>Figma</small></div>
+              </div>
+            </button>
+          </article>
+
+          <article class="project-card reveal" 
+            data-title="Cyberpunk Edgerunners Poster" 
+            data-category="editorial" 
+            data-meta="Editorial" 
+            data-tools="Photoshop • Illustrator • After Effects" 
+            data-desc="Poster campaign inspired by cyberpunk motion energy.">
+            <button class="project-open" type="button">
+              <img src="assets/work/cyberpunk-poster.jpeg" alt="Cyberpunk Edgerunners Poster" loading="lazy">
+              <div class="project-overlay">
+                <span>Editorial</span>
+                <h3>Cyberpunk Edgerunners Poster</h3>
+                <p>Poster campaign inspired by cyberpunk motion energy.</p>
+                <div class="tool-mini"><small>Photoshop</small><small>Illustrator</small><small>After Effects</small></div>
+              </div>
+            </button>
+          </article>
+
+          <article class="project-card reveal" 
+            data-title="Sombr Book Design" 
+            data-category="editorial" 
+            data-meta="Editorial" 
+            data-tools="InDesign • Photoshop • Illustrator" 
+            data-desc="Editorial book cover concept with atmospheric typography.">
+            <button class="project-open" type="button">
+              <img src="assets/work/sombr-book.jpeg" alt="Sombr Book Design" loading="lazy">
+              <div class="project-overlay">
+                <span>Editorial</span>
+                <h3>Sombr Book Design</h3>
+                <p>Editorial book cover concept with atmospheric typography.</p>
+                <div class="tool-mini"><small>InDesign</small><small>Photoshop</small><small>Illustrator</small></div>
+              </div>
+            </button>
+          </article>
+      </div>
+    </section>
+
+    <section class="info-grid" id="about">
+      <article class="info-card reveal">
+        <span>// Profile</span>
+        <h2>Creative direction with system thinking.</h2>
+        <p>Saran Kanapathy is a creative director, artist and brand strategist focused on cinematic visuals, identity systems, music-led aesthetics and digital culture.</p>
+      </article>
+      <article class="info-card reveal">
+        <span>// Experience</span>
+        <h2>Neo Graphics</h2>
+        <p>Worked as Creative Director for 6 months, shaping client-facing visuals, concepts, layouts and campaign materials.</p>
+      </article>
+      <article class="info-card reveal">
+        <span>// Education</span>
+        <h2>NIBM + CAIE</h2>
+        <p>Advanced Diploma in Digital Marketing and Business Management. CAIE Ordinary Levels academic foundation.</p>
+      </article>
+      <article class="info-card reveal">
+        <span>// Community</span>
+        <h2>Gatcha SL / NFSL</h2>
+        <p>Volunteer involvement in community support, digital outreach and youth-led creative initiatives.</p>
+      </article>
+    </section>
+
+    <section class="music-contact" id="music">
+      <article class="info-card reveal">
+        <span>// Music</span>
+        <h2>SoundCloud</h2>
+        <iframe title="Saran SoundCloud profile" width="100%" height="360" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/yenji-583032827&color=%23ff0033&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=true"></iframe>
+      </article>
+      <article class="info-card reveal" id="contact">
+        <span>// Contact</span>
+        <h2>Start a project</h2>
+        <a href="mailto:sarandevopslk@icloud.com">sarandevopslk@icloud.com</a>
+        <a href="tel:+94763367127">0763367127</a>
+        <a href="https://www.behance.net/sarank13" target="_blank" rel="noreferrer">Behance</a>
+        <a href="https://soundcloud.com/yenji-583032827" target="_blank" rel="noreferrer">SoundCloud</a>
+      </article>
+    </section>
+  </main>
+
+  <nav class="mobile-nav">
+    <a href="#home">Home</a>
+    <a href="#work">Work</a>
+    <a href="#about">About</a>
+    <a href="#music">Music</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <dialog id="projectModal">
+    <button id="modalClose" type="button">Close</button>
+    <img id="modalImage" alt="">
+    <div class="modal-copy">
+      <span id="modalMeta"></span>
+      <h2 id="modalTitle"></h2>
+      <p id="modalDesc"></p>
+      <div id="modalTools" class="modal-tools"></div>
+    </div>
+  </dialog>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
